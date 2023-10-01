@@ -54,7 +54,7 @@ TEST(DBConnectionTest, test1)
     EXPECT_CALL(mockConnection, close    ).Times(::testing::AtLeast(1));
     EXPECT_CALL(mockConnection, execQuery).Times(::testing::AtLeast(1));
 
-    //connectSomething(&mockConnection);
+    connectSomething(&mockConnection);
 }
 
 
